@@ -1,0 +1,7 @@
+{
+  "APP_ENVIRONMENT": "localhost",
+  "JWT": {
+    "SECRET_KEY": "jwtsecret_key_xxxx",
+    "EXPIRES_IN": 3600000
+  }
+}

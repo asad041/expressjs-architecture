@@ -1,0 +1,19 @@
+{
+  "APP_NAME": "Novalabs",
+  "APP_VERSION": "1.0.0",
+  "APP_ENVIRONMENT": "development",
+  "API_PREFIX": "/api",
+  "LOGGER_EXECUTION": {
+    "ERROR": true
+  },
+  "JWT": {
+    "SECRET_KEY": "jwtsecret_key_xxxx",
+    "EXPIRES_IN": 3600000
+  },
+  "MONGO_DB": {
+    "URI": ""
+  },
+  "EMAIL_EVENTS": {
+    "WELCOME": "email:welcome"
+  }
+}

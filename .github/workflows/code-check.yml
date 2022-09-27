@@ -1,0 +1,44 @@
+name: Code quality
+on: 'pull_request'
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-code:
+    name: Lint source code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 16.11.1
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.11.1'
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn
+
+      - name: Check prettier format
+        run: yarn format:check
+
+      - name: Force prettier format
+        run: yarn format:write
+
+      - name: Lint files
+        run: |
+          yarn lint:check
+
+      - name: Run dot-only hunter
+        run: |
+          yarn test:dotonly
+
+      - name: Run unit tests
+        run: |
+          yarn test:unit
+
+      - name: Check code coverage
+        run: |
+          yarn test:unit:coverage
+          yarn test:coverage:check
+
+      # send code coverage report codecov

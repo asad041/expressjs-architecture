@@ -1,0 +1,53 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "plugins": ["prettier", "import"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:node/recommended",
+    "plugin:security/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "__basedir": "readonly",
+    "srcDir": true,
+    "expect": true,
+    "describe": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "it": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+
+  "rules": {
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+    "prefer-const": "warn",
+    "no-multi-assign": ["warn", { "ignoreNonDeclaration": true }],
+    "no-negated-condition": "warn",
+    "no-use-before-define": ["warn", "nofunc"],
+    "no-process-exit": "off",
+    "prettier/prettier": "warn",
+    "import/no-unresolved": "error",
+    "import/no-cycle": "warn",
+    "import/no-unused-modules": ["error", { "unusedExports": true }],
+    "node/no-unpublished-require": "off",
+    "node/prefer-promises/fs": "warn",
+    "node/no-missing-require": "off",
+    "node/no-extraneous-import": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "eslint-import-resolver-jsconfig": {
+        "config": "jsconfig.json"
+      }
+    }
+  }
+}

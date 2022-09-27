@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES5",
+    "baseUrl": "./",
+    "paths": {
+      "@config/*": ["config/*"],
+      "@components": ["src/components/index"],
+      "@components/*": ["src/components/*"],
+      "@middlewares": ["src/middlewares/index"],
+      "@middleware/*": ["src/middlewares/*"],
+      "@loaders/*": ["src/loaders/*"],
+      "@utils/*": ["src/utils"],
+      "@services": ["src/services/index"],
+      "@services/*": ["src/services/*"]
+    }
+  },
+  "exclude": ["node_modules", "test"]
+}
