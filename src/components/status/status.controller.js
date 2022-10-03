@@ -1,4 +1,5 @@
 const config = require('config');
+const pack = require('../../../package.json');
 
 const StatusController = {
   /**
@@ -9,9 +10,10 @@ const StatusController = {
    */
   appStatus: async () => {
     const data = {
-      status: 'Healthy',
+      status: 'healthy',
       appName: config.get('APP_NAME'),
       environment: config.get('APP_ENVIRONMENT'),
+      version: pack.version,
       time: new Date(),
     };
 

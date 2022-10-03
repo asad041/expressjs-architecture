@@ -1,5 +1,5 @@
 {
-  "APP_NAME": "Novalabs",
+  "APP_NAME": "novalabs",
   "APP_VERSION": "1.0.0",
   "APP_ENVIRONMENT": "development",
   "API_PREFIX": "/api",
@@ -15,5 +15,11 @@
   },
   "EMAIL_EVENTS": {
     "WELCOME": "email:welcome"
+  },
+  "TWILIO": {
+    "IS_ENABLED": false,
+    "ACCOUNT_SID": "",
+    "AUTH_TOKEN": "",
+    "PHONE_NUMBER": ""
   }
 }
