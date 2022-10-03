@@ -9,6 +9,9 @@ const apiRoutes = [{ path: '/users', routes: UserRoutes }];
  * @param {expressApp} app
  */
 module.exports = (app) => {
+  // Apply the rate limiting middleware to API calls
+  // app.use('/api', applyRateLimiter) ref: middlewares/applyRateLimiter
+
   // main routes
   app.use('/', StatusRoutes);
 
