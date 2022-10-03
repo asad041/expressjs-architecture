@@ -4,6 +4,7 @@ const badJsonHandler = require('./bad-json-handler');
 const errorHandler = require('./error-handler');
 const makeExpressCallback = require('./express-callback');
 const notFoundHandler = require('./not-found-error');
+const applyRateLimiter = require('./rate-limit');
 
 module.exports = {
   auth,
@@ -12,4 +13,5 @@ module.exports = {
   errorHandler,
   makeExpressCallback,
   notFoundHandler,
+  applyRateLimiter,
 };

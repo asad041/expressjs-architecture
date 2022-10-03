@@ -1,4 +1,6 @@
-# Backend MVP Version &middot; [![Code quality](https://github.com/tazweedapp/express_backend_template/actions/workflows/code-check.yml/badge.svg)](https://github.com/tazweedapp/express_backend_template/actions/workflows/code-check.yml) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+# Backend MVP Version &middot;
+
+[![Code quality](https://github.com/asad041/expressjs-architecture/actions/workflows/code-check.yml/badge.svg)](https://github.com/asad041/expressjs-architecture/actions/workflows/code-check.yml) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 
 > This is the RESTful API Service. It's base example include token authorisation and sample of CRUD (create, read, update, delete) operations.
 
@@ -19,6 +21,7 @@ npm install OR yarn install
 - [config](https://www.npmjs.com/package/config) Node.js configuration
 - [async-errors](https://www.npmjs.com/package/express-async-errors) ExpressJs async errors
 - [eslint](https://eslint.org/) Linting utility
+- [rate-limit](https://www.npmjs.com/package/express-rate-limit) Rate limiter
 
 ## Configuration
 
