@@ -5,7 +5,7 @@ const { expect } = require('chai');
 describe('Middleware: auth', () => {
   // with default.json jwt secrets
   const authToken = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6Il91c2VySWQxMjM0In0sImlhdCI6MTY2NDc5ODkzNCwiZXhwIjoxNjY4Mzk4OTM0LCJhdWQiOiJub3ZhbGFiczpkZXZlbG9wbWVudCIsImlzcyI6InlvdXJkb21haW4uY29tIn0.MqCQDYwaz9eqQdHrPCNqjIED604buIxI-lrnv6O6dis`;
-  const authTokenWithoutUser = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1IjoidXNlcl9pZCIsIm5hbWUiOiJkb2UiLCJpYXQiOjE2NjE5NjY1NDIsImV4cCI6MTY2NTU2NjU0MiwiYXVkIjoiTm92YWxhYnM6ZGV2ZWxvcG1lbnQiLCJpc3MiOiJ5b3VyZG9tYWluLmNvbSJ9.TBOQIasEPNITH40E5rs6OF3Qw0EwQ4D7AhiHisZDa7M`;
+  const authTokenWithoutUser = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub191c2VyIjp7Il9pZCI6Il91c2VySWQxMjM0In0sImlhdCI6MTY2NDgwNjI1OSwiZXhwIjoxNjY4NDA2MjU5LCJhdWQiOiJub3ZhbGFiczpkZXZlbG9wbWVudCIsImlzcyI6InlvdXJkb21haW4uY29tIn0.xouf309ceM9DAGMTKC-NqRAQUMS43XYden4Kp9R6XSk`;
   let sandbox = null;
   const next = sinon.stub();
   const res = sinon.stub();
