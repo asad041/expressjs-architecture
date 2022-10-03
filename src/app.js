@@ -9,7 +9,7 @@ const {
   notFoundHandler,
 } = require('@middlewares');
 
-const { initConfig, events, routes } = require('./loaders');
+const { initConfig, events, helmet, routes } = require('./loaders');
 
 module.exports = () => {
   const PORT = parseInt(process.env.BACKEND_PORT || process.env.PORT, 10);
@@ -29,6 +29,9 @@ module.exports = () => {
       console.log(error);
       //   logger.error('Unexpected API error', { error });
     });
+
+    // setup http headers
+    helmet(app);
 
     // too busy middleware
     app.use(busy);

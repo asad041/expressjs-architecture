@@ -1,6 +1,6 @@
 {
   "name": "express_backend",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "expressjs backend template",
   "main": "server.js",
   "engines": {
@@ -20,7 +20,7 @@
     "test:unit": "mocha ./test/test.config.js ./test/unit --recursive --timeout 90000",
     "test:dotonly": "dot-only-hunter test",
     "test:unit:coverage": "nyc --temp-dir=coverage/.nyc_outputUnit --report-dir=coverage/unit npm run test:unit",
-    "test:coverage:check": "nyc check-coverage --temp-dir=coverage/unit --statements 95 --branches 82 --functions 91 --lines 95",
+    "test:coverage:check": "nyc check-coverage --temp-dir=coverage/unit --statements 70 --branches 70 --functions 70 --lines 70",
     "version:patch": "npm version patch",
     "version:minor": "npm version minor",
     "version:major": "npm version major"
@@ -42,10 +42,12 @@
     "config": "^3.3.7",
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
+    "helmet": "^6.0.0",
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
     "path": "^0.12.7",
-    "toobusy-js": "^0.5.1"
+    "toobusy-js": "^0.5.1",
+    "twilio": "^3.82.1"
   },
   "devDependencies": {
     "chai": "^4.3.6",

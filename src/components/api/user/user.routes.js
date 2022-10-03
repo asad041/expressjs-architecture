@@ -9,5 +9,10 @@
 module.exports = ({ router, UserController, makeExpressCallback }) => {
   router.get('/single/:_userId', makeExpressCallback(UserController.getUser));
 
+  router.post(
+    '/phone_number',
+    makeExpressCallback(UserController.authPhoneNumber)
+  );
+
   return router;
 };
