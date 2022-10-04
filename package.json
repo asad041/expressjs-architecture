@@ -1,6 +1,6 @@
 {
   "name": "express_backend",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "expressjs backend template",
   "main": "server.js",
   "engines": {
