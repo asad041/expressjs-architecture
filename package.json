@@ -30,14 +30,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tazweedapp/express_backend_template.git"
+    "url": "git+https://github.com/asad041/expressjs-architecture.git"
   },
+  "keywords": [
+    "node",
+    "skeleton",
+    "nodejs",
+    "javascript",
+    "template",
+    "clean architecture"
+  ],
   "author": "Asad",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tazweedapp/express_backend_template/issues"
+    "url": "https://github.com/asad041/expressjs-architecture/issues"
   },
-  "homepage": "https://github.com/tazweedapp/express_backend_template#readme",
+  "homepage": "https://github.com/asad041/expressjs-architecture#readme",
   "dependencies": {
     "config": "^3.3.7",
     "express": "^4.18.1",
