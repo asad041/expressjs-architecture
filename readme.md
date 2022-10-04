@@ -2,7 +2,7 @@
 
 [![Code quality](https://github.com/asad041/expressjs-architecture/actions/workflows/code-check.yml/badge.svg)](https://github.com/asad041/expressjs-architecture/actions/workflows/code-check.yml) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 
-> This is the Component Based Clean Architecture. It's base example include jwt token authorization, http headers security, rate limiter for incoming request, request, params and custom error handlers, events flow, enforces formatter check, eslinter for code quality check, unit tests, producing code coverage report, enforce code coverage, integration of some third party services. (includes: code quality check, formatter, unit tests, code coverage)
+> This is the Component Based Clean Architecture. It's base example include jwt token authorization, http headers security, rate limiter for incoming request, custom error handlers, events flow, enforces formatter check, eslinter for code quality, unit tests, enforces code coverage and produces the report, integration of some third party services.
 
 ## Installation
 
