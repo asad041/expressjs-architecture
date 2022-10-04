@@ -85,4 +85,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-NA
+Please see the [license agreement](https://github.com/asad041/expressjs-architecture/blob/main/LICENSE)
