@@ -3,6 +3,7 @@ const busy = require('./busy');
 const badJsonHandler = require('./bad-json-handler');
 const errorHandler = require('./error-handler');
 const makeExpressCallback = require('./express-callback');
+const makeValidatorCallback = require('./validator-callback');
 const notFoundHandler = require('./not-found-error');
 const applyRateLimiter = require('./rate-limit');
 
@@ -12,6 +13,7 @@ module.exports = {
   badJsonHandler,
   errorHandler,
   makeExpressCallback,
+  makeValidatorCallback,
   notFoundHandler,
   applyRateLimiter,
 };
