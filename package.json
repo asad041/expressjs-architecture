@@ -54,6 +54,7 @@
     "helmet": "^6.0.0",
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
+    "mongoose": "^6.7.2",
     "path": "^0.12.7",
     "toobusy-js": "^0.5.1",
     "twilio": "^3.82.1"

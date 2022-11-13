@@ -11,7 +11,9 @@
     "EXPIRES_IN": 3600000
   },
   "MONGO_DB": {
-    "URI": ""
+    "URI": "mongodb://127.0.0.1:27017/db_express_arch",
+    "DB_NAME": "db_express_arch",
+    "DEBUG": false
   },
   "EMAIL_EVENTS": {
     "WELCOME": "email:welcome"
