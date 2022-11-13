@@ -1,6 +1,6 @@
 {
   "name": "express_backend",
-  "version": "1.0.14",
+  "version": "1.0.16",
   "description": "expressjs backend template",
   "main": "server.js",
   "engines": {
@@ -51,9 +51,11 @@
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
     "express-rate-limit": "^6.6.0",
+    "express-validator": "^6.14.2",
     "helmet": "^6.0.0",
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
+    "mongoose": "^6.7.2",
     "path": "^0.12.7",
     "toobusy-js": "^0.5.1",
     "twilio": "^3.82.1"
@@ -65,6 +67,7 @@
     "dot-only-hunter": "^1.0.3",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-jsconfig": "^1.1.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -78,6 +81,7 @@
     "sinon": "^14.0.0"
   },
   "_moduleAliases": {
+    "@models": "db/models",
     "@components": "src/components",
     "@middlewares": "src/middlewares",
     "@utils": "src/utils",
