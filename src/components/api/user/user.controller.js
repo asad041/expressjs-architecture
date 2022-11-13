@@ -1,12 +1,14 @@
 const Twilio = require('@services/twilio.service');
+const UserProvider = require('./user.provider');
 
 const UserController = {
   getUser: async (httpRequest) => {
     const { _userId } = httpRequest.params;
+    const userDto = UserProvider.dummyUserDto({ _userId });
 
     return {
       statusCode: 200,
-      body: { user: { _id: _userId, name: 'Doe', email: 'doe-555@gmail.com' } },
+      body: { userDto },
     };
   },
 

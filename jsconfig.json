@@ -5,11 +5,13 @@
     "baseUrl": "./",
     "paths": {
       "@config/*": ["config/*"],
+      "@models": ["db/models/index"],
       "@components": ["src/components/index"],
       "@components/*": ["src/components/*"],
       "@middlewares": ["src/middlewares/index"],
       "@middleware/*": ["src/middlewares/*"],
       "@loaders/*": ["src/loaders/*"],
+      "@utils": ["src/utils/index"],
       "@utils/*": ["src/utils"],
       "@services": ["src/services/index"],
       "@services/*": ["src/services/*"]

@@ -67,6 +67,7 @@
     "dot-only-hunter": "^1.0.3",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-jsconfig": "^1.1.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -80,6 +81,7 @@
     "sinon": "^14.0.0"
   },
   "_moduleAliases": {
+    "@models": "db/models",
     "@components": "src/components",
     "@middlewares": "src/middlewares",
     "@utils": "src/utils",
