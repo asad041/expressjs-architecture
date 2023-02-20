@@ -1,11 +1,18 @@
 const sinon = require('sinon');
 const auth = require('@middlewares/auth');
+const { JWTService } = require('@services');
 const { expect } = require('chai');
 
 describe('Middleware: auth', () => {
   // with default.json jwt secrets
-  const authToken = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6Il91c2VySWQxMjM0In0sImlhdCI6MTY2NDc5ODkzNCwiZXhwIjoxNjY4Mzk4OTM0LCJhdWQiOiJub3ZhbGFiczpkZXZlbG9wbWVudCIsImlzcyI6InlvdXJkb21haW4uY29tIn0.MqCQDYwaz9eqQdHrPCNqjIED604buIxI-lrnv6O6dis`;
-  const authTokenWithoutUser = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub191c2VyIjp7Il9pZCI6Il91c2VySWQxMjM0In0sImlhdCI6MTY2NDgwNjI1OSwiZXhwIjoxNjY4NDA2MjU5LCJhdWQiOiJub3ZhbGFiczpkZXZlbG9wbWVudCIsImlzcyI6InlvdXJkb21haW4uY29tIn0.xouf309ceM9DAGMTKC-NqRAQUMS43XYden4Kp9R6XSk`;
+  const authToken = JWTService.encrypt({
+    payload: { user: { id: 'user_id', name: 'asad' } },
+  });
+
+  const authTokenWithoutUser = JWTService.encrypt({
+    payload: { id: 'user_id', name: 'asad' },
+  });
+
   let sandbox = null;
   const next = sinon.stub();
   const res = sinon.stub();
