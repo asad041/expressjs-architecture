@@ -14,7 +14,9 @@
       "@utils": ["src/utils/index"],
       "@utils/*": ["src/utils"],
       "@services": ["src/services/index"],
-      "@services/*": ["src/services/*"]
+      "@services/*": ["src/services/*"],
+      "@templates": ["src/templates/index"],
+      "@templates/*": ["src/templates/*"]
     }
   },
   "exclude": ["node_modules", "test"]
