@@ -23,5 +23,12 @@
     "ACCOUNT_SID": "",
     "AUTH_TOKEN": "",
     "PHONE_NUMBER": ""
+  },
+  "AWS_SES": {
+    "IS_ENABLED": false,
+    "ACCESS_KEY_ID": "",
+    "SECRET_ACCESS_KEy": "",
+    "REGION": "",
+    "SENDER_EMAIL": "<noreply@example.com>"
   }
 }

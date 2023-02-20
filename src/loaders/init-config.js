@@ -12,6 +12,12 @@ const configProps = [
   'JWT.EXPIRES_IN',
   'MONGO_DB',
   'MONGO_DB.URI',
+  'AWS_SES',
+  'AWS_SES.IS_ENABLED',
+  'AWS_SES.ACCESS_KEY_ID',
+  'AWS_SES.SECRET_ACCESS_KEy',
+  'AWS_SES.REGION',
+  'AWS_SES.SENDER_EMAIL',
 ];
 
 module.exports = () => {
